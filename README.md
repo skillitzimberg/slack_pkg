@@ -31,8 +31,6 @@ Ngan Nguyen :: ngan@nguyen.com
 
 ## Technologies Used
 
-For versions and a full list of dependencies, plugins, and scripts see [package.json](./package.json).
-
 | Dependency  | Description                    |
 | ----------- | ------------------------------ |
 | apptree CLI | CLI tools for AppTree platform |
