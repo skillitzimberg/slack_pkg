@@ -26,6 +26,10 @@ Slaack docs for formatting, fetching, & posting messages to Slack.
 [Messsage Formatting](https://api.slack.com/messaging/composing/formatting)  
 [Messsage Sending](https://api.slack.com/messaging/sending)  
 
+## Objective
+
+
+
 ## Questions
 
 - Q: Do we want to post multiple events per post or one event per post?
@@ -41,6 +45,11 @@ formats the Meetup response; the webhook_pkg posts the formatted response.
 - 
 
 ## Planning
+
+### Repos involved
+[Meetup-Slack-Workflow](https://github.com/skillitzimberg/Meet-Slack-Workflow)
+[slack_pkg](https://github.com/skillitzimberg/slack_pkg)
+[meetup_pkg](https://github.com/skillitzimberg/meetup_pkg)
 
 ### Message payload
 
