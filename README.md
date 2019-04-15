@@ -1,9 +1,46 @@
 # Slack Step Package
+### Authors
 
-Steps for formatting, fetching, & posting messages to Slack.  
-[Messsage Composition](https://api.slack.com/messaging/composing)
-[Messsage Formatting](https://api.slack.com/messaging/composing/formatting)
-[Messsage Sending](https://api.slack.com/messaging/sending)
+Scott Bergler  
+Ngan Nguyen
+
+## Table of contents
+
+#### Development contents
+**[Questions](#questions)**<br>
+**[Ideas](#ideas)**<br>
+**[Planning](#planning)**<br>
+
+####General Contents
+**[Resources](#resources)**<br>
+**[Setup & Installation](#setup-and-installation)**<br>
+**[Known Bugs](#known-bugs)**<br>
+**[Acknowledgements](#acknowledgements)**<br>
+**[Support](#support)**<br>
+**[Technologies Used](#technologies-used)**<br>
+**[License](#license)**<br>
+**[Copyright](#copyright)**<br>
+
+Slaack docs for formatting, fetching, & posting messages to Slack.  
+[Messsage Composition](https://api.slack.com/messaging/composing)  
+[Messsage Formatting](https://api.slack.com/messaging/composing/formatting)  
+[Messsage Sending](https://api.slack.com/messaging/sending)  
+
+## Questions
+
+- Q: Do we want to post multiple events per post or one event per post?
+- Q: Should our Post structs be composed of multiple component structs?
+- Q: Should we define the most basic Post struct possible then add other 
+structs to that depending on what kind of post we're making?
+- Is this our workflow: The meetup_pkg makes GET request; the slack_pkg 
+formats the Meetup response; the webhook_pkg posts the formatted response.
+
+
+## Ideas
+- We might need to find out how to call a workflow from another workflow.
+- 
+
+## Planning
 
 ### Message payload
 
@@ -193,21 +230,26 @@ A highly customizable block that accepts a plaintext or markdown element, and al
 ]
 ```
 
-### Authors
+#### Structs
+```
+type Block struct {
+    Type string
+    Text struct
+}
+```
 
-Scott Bergler  
-Ngan Nguyen
+```cassandraql
+type BlockText struct {
+    Type string
+    Text string
+}
+```
 
-## Table of contents
 
-**[Resources](#resources)**<br>
-**[Setup & Installation](#setup-and-installation)**<br>
-**[Known Bugs](#known-bugs)**<br>
-**[Acknowledgements](#acknowledgements)**<br>
-**[Support](#support)**<br>
-**[Technologies Used](#technologies-used)**<br>
-**[License](#license)**<br>
-**[Copyright](#copyright)**<br>
+**Example Event Block
+```cassandraql
+
+```
 
 ## Resources
 
